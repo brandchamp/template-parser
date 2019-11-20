@@ -2,11 +2,13 @@
   "name": "template-parser",
   "version": "1.0.0",
   "description": "Simple opinionated template parser",
-  "main": "dist/templateParser.js",
+  "main": "dist/templateParser.min.js",
+  "module": "dist/templateParser.es.js",
   "directories": {
     "test": "tests"
   },
   "scripts": {
+    "build": "rm -rf dist && rollup -c",
     "test": "mocha -r ts-node/register tests/*.spec.ts"
   },
   "keywords": [
@@ -20,6 +22,9 @@
     "@types/mocha": "^5.2.7",
     "chai": "^4.2.0",
     "mocha": "^6.2.2",
+    "rollup": "^1.27.2",
+    "rollup-plugin-typescript2": "^0.25.2",
+    "rollup-plugin-uglify": "^6.0.3",
     "ts-node": "^8.5.2",
     "typescript": "^3.7.2"
   }
