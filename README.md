@@ -28,7 +28,7 @@ const template = `
 const { text, unreplacedTokens } = parseTemplate(template, {
   'FIRST-NAME': 'John',
   'LAST-NAME': 'Doe',
-  'COMPANY-LOGO': '<img src="http://company-logo.example.com"></img>'.
+  'COMPANY-LOGO': '<img src="http://company-logo.example.com"></img>',
   'REGISTER-URL': 'https://register.example.com',
   'LINK-BUTTON'(name, url) {
     return `<a class="ui large primary button" href="${url}">${name}</a>`;
@@ -53,7 +53,7 @@ const { text, unreplacedTokens } = parseTemplate(template, {
 // Example 2 - Parsing template without having value for all tokens
 const { text, unreplacedTokens } = parseTemplate(template, {
   'FIRST-NAME': 'John',
-  'COMPANY-LOGO': '<img src="http://company-logo.example.com"></img>'.
+  'COMPANY-LOGO': '<img src="http://company-logo.example.com"></img>',
 });
 
 /*
