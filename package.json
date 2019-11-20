@@ -1,15 +1,13 @@
 {
   "name": "template-parser",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Simple opinionated template parser",
   "main": "dist/templateParser.min.js",
   "module": "dist/templateParser.es.js",
-  "directories": {
-    "test": "tests"
-  },
   "scripts": {
-    "build": "rm -rf dist && rollup -c",
-    "test": "mocha -r ts-node/register tests/*.spec.ts"
+    "test": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' mocha -r ts-node/register tests/*.spec.ts",
+    "build": "npm run test  && rm -rf dist && rollup -c",
+    "publish": "npm run build && npm publish --dry-run"
   },
   "keywords": [
     "template",
@@ -17,6 +15,14 @@
   ],
   "author": "Stefan Novakovic <stefan.novakovich@gmail.com>",
   "license": "MIT",
+  "homepage": "https://github.com/brandchamp/template-parser",
+  "bugs": {
+    "url": "https://github.com/brandchamp/template-parser/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandchamp/template-parser.git"
+  },
   "devDependencies": {
     "@types/chai": "^4.2.5",
     "@types/mocha": "^5.2.7",
