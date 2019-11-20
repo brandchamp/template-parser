@@ -1,13 +1,14 @@
 {
   "name": "@brandchamp/simple-template-parser",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "Simple opinionated template parser",
   "main": "dist/templateParser.min.js",
   "module": "dist/templateParser.es.js",
   "scripts": {
     "test": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' mocha -r ts-node/register test/*.spec.ts",
     "build": "npm run test  && rm -rf dist && rollup -c",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "public-publish": "npm publish --access public"
   },
   "keywords": [
     "template",
