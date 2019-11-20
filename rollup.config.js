@@ -6,15 +6,15 @@ export default {
   input: 'src/templateParser.ts',
   output: [
     {
-      // templateParser.min.js
+      // templateParser.js
       file: pkg.main,
       format: 'cjs',
-      plugins: [uglify()]
     },
     {
-      // templateParser.js
-      file: pkg.main.replace('.min', ''),
+      // templateParser.min.js
+      file: pkg.main.replace('.js', '.min.js'),
       format: 'cjs',
+      plugins: [uglify()]
     },
     {
       // templateParser.es.js

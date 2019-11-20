@@ -1,8 +1,8 @@
 {
   "name": "@brandchamp/simple-template-parser",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "Simple opinionated template parser",
-  "main": "dist/templateParser.min.js",
+  "main": "dist/templateParser.js",
   "module": "dist/templateParser.es.js",
   "scripts": {
     "test": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' mocha -r ts-node/register test/*.spec.ts",
