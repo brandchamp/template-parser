@@ -10,7 +10,7 @@ Opinionated simple and small template parser without dependencies.
 
 ### parseTemplate
 
-```JavaScript
+```javascript
 import { parseTemplate } from '@brandchamp/simple-template-parser';
 
 const template = `
@@ -83,7 +83,7 @@ const { text, unreplacedTokens } = parseTemplate(template, {
 
 ### extractTokensFromTemplate
 
-```JavaScript
+```javascript
 
 import { extractTokensFromTemplate } from '@brandchamp/simple-template-parser';
 
