@@ -1,5 +1,5 @@
 {
-  "name": "simple-template-parser",
+  "name": "@brandchamp/simple-template-parser",
   "version": "0.0.1",
   "description": "Simple opinionated template parser",
   "main": "dist/templateParser.min.js",
@@ -7,7 +7,7 @@
   "scripts": {
     "test": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' mocha -r ts-node/register tests/*.spec.ts",
     "build": "npm run test  && rm -rf dist && rollup -c",
-    "publish": "npm run build && npm publish --dry-run"
+    "prepublish": "npm run build"
   },
   "keywords": [
     "template",
@@ -33,5 +33,9 @@
     "rollup-plugin-uglify": "^6.0.3",
     "ts-node": "^8.5.2",
     "typescript": "^3.7.2"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {}
 }
