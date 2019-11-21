@@ -1,6 +1,6 @@
 # Template Parser
 
-Opinionated simple and small template parser without dependencies.
+Simple small and opinionated template parser without external dependencies (~950B minified).
 
 ### Api
 

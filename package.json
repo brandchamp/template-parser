@@ -1,6 +1,6 @@
 {
-  "name": "@brandchamp/simple-template-parser",
-  "version": "0.0.6",
+  "name": "@brandchamp/template-parser",
+  "version": "0.0.1",
   "description": "Simple opinionated template parser",
   "main": "dist/templateParser.js",
   "module": "dist/templateParser.es.js",
